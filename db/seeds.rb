@@ -11,4 +11,4 @@ User.delete_all
 # end
 
 # create test user
-User.create!(first_name: "Test", last_name: "User", email: "test@test.com", password: "password")
+User.create!(username: "test_user", email: "test@test.com", password: "password")

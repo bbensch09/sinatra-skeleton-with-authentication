@@ -4,7 +4,7 @@ end
 
 post '/register' do
   @user = User.new(first_name: params[:first_name], last_name: params[:last_name], email: params[:email])
-  @user.password = params[:password]
+  @user.password = params[:password_plaintext]
   if @user.save
     redirect "/login"
   else

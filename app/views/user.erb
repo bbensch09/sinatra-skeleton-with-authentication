@@ -1,9 +1,8 @@
 <div class="container">
-  <h1>Hello, <%= @logged_in_as.first_name %>!</h1>
+  <h1>Hello, <%= @logged_in_as.username %>!</h1>
   <p>Here's the information we have for you:</p>
   <ul>
-    <li>First name: <%= @logged_in_as.first_name %></li>
-    <li>Last name: <%= @logged_in_as.last_name %></li>
+    <li>Username: <%= @logged_in_as.username %></li>
     <li>Email address: <%= @logged_in_as.email %></li>
     <li>Registered at: <%= @logged_in_as.created_at %></li>
     <li>Updated at: <%= @logged_in_as.updated_at %></li>
